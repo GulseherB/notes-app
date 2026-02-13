@@ -1,0 +1,268 @@
+/* Homepage layout */
+
+.productSection {
+  padding: 2.5rem 0 4rem;
+  text-align: center;
+}
+
+.sectionEyebrow {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(209, 33, 33, 0.1);
+  color: #d12121;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2340;
+  margin-bottom: 0.75rem;
+}
+
+.sectionDescription {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  color: #6c6f85;
+  font-size: 1rem;
+}
+
+.productGridSection {
+  margin-top: 1rem;
+}
+
+.productGrid {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 2rem;
+}
+
+.productCardCol {
+  display: flex;
+}
+
+.productCard {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.productCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.15);
+}
+
+.productThumb {
+  width: 100%;
+  height: 240px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.productBody {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.productHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.productName {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1f2340;
+}
+
+.productPrice {
+  font-weight: 700;
+  color: #d12121;
+}
+
+.productRating {
+  color: #f2b01e;
+  text-align: left;
+}
+
+.productActions {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.quickViewButton {
+  border-radius: 999px !important;
+  padding: 0.65rem 1.5rem !important;
+  font-weight: 600 !important;
+}
+
+.addToCartButton {
+  border-radius: 999px !important;
+  padding: 0.65rem 0.85rem !important;
+  border: 1px solid #ffc107 !important;
+  background: #fff8e1 !important;
+  color: #8a5802 !important;
+}
+
+.productQuantityControl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.qtyButton {
+  width: 36px;
+  height: 36px;
+  border-radius: 50% !important;
+  border: 1px solid #d1d5db !important;
+  color: #111827 !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+}
+
+.qtyValue {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.inspirationSection {
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #fff7f2 0%, #ffe0d4 100%);
+}
+
+.inspirationContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inspirationImageWrapper {
+  position: relative;
+  flex: 1 1 480px;
+  min-height: 320px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+.inspirationCopy {
+  flex: 1 1 360px;
+  text-align: left;
+}
+
+.inspirationTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d12121;
+  margin-bottom: 1rem;
+}
+
+.inspirationText {
+  font-size: 1rem;
+  color: #5c5f73;
+  margin-bottom: 1.5rem;
+}
+
+.actionRow {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+  .sectionTitle {
+    font-size: 1.9rem;
+  }
+  .productActions {
+    grid-template-columns: 1fr 1fr;
+  }
+  .inspirationCopy {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .productSection {
+    padding: 1.5rem 0 3rem;
+  }
+  .productActions {
+    grid-template-columns: 1fr;
+  }
+  .inspirationContainer {
+    flex-direction: column;
+  }
+  .inspirationCopy {
+    text-align: center;
+  }
+  .actionRow {
+    justify-content: center;
+  }
+}
+/* Homepage layout improvements */
+
+.home-section-title {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #d12121;
+}
+
+.home-category-row {
+  margin-bottom: 2rem;
+}
+
+.home-product-row {
+  margin-bottom: 2rem;
+}
+
+.home-banner-row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.home-banner-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.home-banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
