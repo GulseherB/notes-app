@@ -15,7 +15,7 @@ const AboutUs: NextPageWithLayout<AboutUsProps> = ({ productBanner }) => {
     <section>
       <Meta
         title={`Karadağ Baharat | Hakkımızda`}
-        content={`Türkiye'nin en kaliteli baharat tedarikçisi - Karadağ Baharat`}
+        content={`Türkiye&#39;nin en kaliteli baharat tedarikçisi - Karadağ Baharat`}
       />
       <BaseContainer>
         <Row className="py-5">
@@ -48,7 +48,7 @@ const AboutUs: NextPageWithLayout<AboutUsProps> = ({ productBanner }) => {
             </h1>
             <div>
               <p className="text-justify ft-14 fw-normal text-color-b94 mt-2 mb-3">
-                Karadağ Baharat, Türkiye'nin önde gelen baharat tedarikçilerinden biridir. 
+                Karadağ Baharat, Türkiye&#39;nin önde gelen baharat tedarikçilerinden biridir. 
                 Yılların deneyimi ve müşteri memnuniyeti odaklı yaklaşımımızla, en kaliteli 
                 baharatları sofranıza taşıyoruz.
               </p>
@@ -60,7 +60,7 @@ const AboutUs: NextPageWithLayout<AboutUsProps> = ({ productBanner }) => {
               </p>
               <p className="text-justify ft-14 fw-normal text-color-b94 mt-2 mb-3">
                 Kırmızı biber, karabiber, kimyon, sumak, pul biber ve daha fazlası... 
-                Geniş ürün yelpazemiz ile mutfağınıza lezzet katıyoruz. Tüm Türkiye'ye 
+                Geniş ürün yelpazemiz ile mutfağınıza lezzet katıyoruz. Tüm Türkiye&#39;ye 
                 hızlı ve güvenli teslimat yapıyoruz.
               </p>
               <p className="text-justify ft-14 fw-normal text-color-b94 mt-2 mb-3">

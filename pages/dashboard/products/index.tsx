@@ -3,6 +3,7 @@
  * Tüm ürünleri listeler ve düzenleme/silme imkanı sağlar
  */
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Row, Col, Table, Button, Badge, Alert } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 import { useSession } from 'next-auth/react';
@@ -93,10 +94,13 @@ const ProductsList: NextPageWithLayout = () => {
                 <tr key={product._id}>
                   <td>
                     {product.storage_files?.[0]?.image_url ? (
-                      <img
+                      <Image
                         src={product.storage_files[0].image_url}
                         alt={product.name}
-                        style={{ width: '50px', height: '50px', objectFit: 'cover' }}
+                        width={50}
+                        height={50}
+                        style={{ objectFit: 'cover' }}
+                        unoptimized
                       />
                     ) : (
                       <div
