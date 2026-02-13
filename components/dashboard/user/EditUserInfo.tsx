@@ -48,7 +48,7 @@ const EditUserInfo: React.FC<EditUserInfoProps> = ({ user }) => {
       // accessToken alınmalı ve üçüncü argüman olarak eklenmeli
       const accessToken = (user as any)?.access_token || "";
       const result = await updateUser(
-        user.id,
+        user.id.toString(),
         trimmedData as EditUserFormFields,
         accessToken
       );
