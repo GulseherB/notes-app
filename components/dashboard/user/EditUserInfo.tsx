@@ -45,9 +45,12 @@ const EditUserInfo: React.FC<EditUserInfoProps> = ({ user }) => {
     try {
       setLoading(true);
       const trimmedData = removeFalsy(data);
+      // accessToken alınmalı ve üçüncü argüman olarak eklenmeli
+      const accessToken = (user as any)?.access_token || "";
       const result = await updateUser(
         user.id,
-        trimmedData as EditUserFormFields
+        trimmedData as EditUserFormFields,
+        accessToken
       );
       if (result.data) {
         router.push("/admin/users/");
